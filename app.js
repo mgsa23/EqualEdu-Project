@@ -70,6 +70,45 @@ for(const [code,translation] of Object.entries(extraLocales)){
     for(const key of ['host','city','date','title','description','resourceTitle'])event[key][code]=translation.events[index][key];
   });
 }
+const accessTranslations = {
+  "es": {
+    "accessTitle": "Acceso Universal y Gratuito",
+    "accessBody": "El acceso a esta plataforma y a sus contenidos es universal, libre y gratuito, sin necesidad de registro ni pago, en consonancia con los principios de acceso abierto, inclusión y difusión del conocimiento promovidos por los programas europeos Erasmus+, Creative Europe y European Solidarity Corps y sus respectivas plataformas de resultados (E+/CE/ESC PRP).",
+    "accessResources": "Los recursos están disponibles para facilitar su consulta y aprovechamiento por parte de la comunidad educativa, científica y la sociedad en general.",
+    "cofundedAlt": "Cofinanciado por la Unión Europea"
+  },
+  "en": {
+    "accessTitle": "Universal and Free Access",
+    "accessBody": "Access to this platform and its contents is universal, open and free of charge, with no registration or payment required, in line with the principles of open access, inclusion and knowledge dissemination promoted by the European programmes Erasmus+, Creative Europe and European Solidarity Corps and their respective project results platforms (E+/CE/ESC PRP).",
+    "accessResources": "The resources are available to facilitate their consultation and use by the educational and scientific communities and society at large.",
+    "cofundedAlt": "Co-funded by the European Union"
+  },
+  "it": {
+    "accessTitle": "Accesso Universale e Gratuito",
+    "accessBody": "L’accesso a questa piattaforma e ai suoi contenuti è universale, libero e gratuito, senza necessità di registrazione o pagamento, in linea con i principi di accesso aperto, inclusione e diffusione della conoscenza promossi dai programmi europei Erasmus+, Creative Europe ed European Solidarity Corps e dalle rispettive piattaforme dei risultati dei progetti (E+/CE/ESC PRP).",
+    "accessResources": "Le risorse sono disponibili per facilitarne la consultazione e l’utilizzo da parte della comunità educativa e scientifica e della società in generale.",
+    "cofundedAlt": "Cofinanziato dall’Unione europea"
+  },
+  "cs": {
+    "accessTitle": "Univerzální a Bezplatný Přístup",
+    "accessBody": "Přístup k této platformě a jejímu obsahu je univerzální, volný a bezplatný, bez nutnosti registrace či platby, v souladu se zásadami otevřeného přístupu, inkluze a šíření znalostí podporovanými evropskými programy Erasmus+, Creative Europe a European Solidarity Corps a jejich příslušnými platformami výsledků projektů (E+/CE/ESC PRP).",
+    "accessResources": "Zdroje jsou k dispozici vzdělávací a vědecké komunitě i široké veřejnosti, aby usnadnily jejich prohlížení a využívání.",
+    "cofundedAlt": "Spolufinancováno Evropskou unií"
+  },
+  "lt": {
+    "accessTitle": "Visuotinė ir Nemokama Prieiga",
+    "accessBody": "Prieiga prie šios platformos ir jos turinio yra visuotinė, laisva ir nemokama, nereikalaujant registracijos ar mokėjimo, laikantis atvirosios prieigos, įtraukties ir žinių sklaidos principų, kuriuos skatina Europos programos Erasmus+, Creative Europe ir European Solidarity Corps bei jų atitinkamos projektų rezultatų platformos (E+/CE/ESC PRP).",
+    "accessResources": "Ištekliai prieinami švietimo ir mokslo bendruomenėms bei plačiajai visuomenei, siekiant palengvinti susipažinimą su jais ir jų naudojimą.",
+    "cofundedAlt": "Bendrai finansuoja Europos Sąjunga"
+  },
+  "pt": {
+    "accessTitle": "Acesso Universal e Gratuito",
+    "accessBody": "O acesso a esta plataforma e aos seus conteúdos é universal, livre e gratuito, sem necessidade de registo ou pagamento, em consonância com os princípios de acesso aberto, inclusão e difusão do conhecimento promovidos pelos programas europeus Erasmus+, Creative Europe e European Solidarity Corps e pelas respetivas plataformas de resultados dos projetos (E+/CE/ESC PRP).",
+    "accessResources": "Os recursos estão disponíveis para facilitar a sua consulta e utilização pela comunidade educativa e científica e pela sociedade em geral.",
+    "cofundedAlt": "Cofinanciado pela União Europeia"
+  }
+};
+for (const [code, translation] of Object.entries(accessTranslations)) Object.assign(copy[code], translation);
 // Extended meeting stories share their card content across all six languages.
 for(const [code,translation] of Object.entries(meetingStories)){
   for(const id of ['malaga','malta']){
