@@ -118,3 +118,6 @@
 @media(max-width:900px){.header-cofunded{width:190px}.header-identity{gap:18px}}
 @media(max-width:650px){.header-identity{gap:10px;flex:1}.header-cofunded{width:clamp(90px,24vw,150px)}.header .brand>span{font-size:18px}.header .brand small{max-width:100px;font-size:7px}.header .brand{gap:7px}.header .brand>img{width:34px;height:34px}.header{padding-inline:12px;gap:5px}.access-section p{font-size:14px}}
 @media(max-width:370px){.header .brand small{display:none}.header .brand>span{font-size:16px}.header-cofunded{width:88px}.header-identity{gap:7px}.header .brand>img{width:29px;height:29px}.header .brand{gap:5px}.menu-button{width:36px;padding:8px}}
+
+.footer-cofunded{width:210px;height:auto;object-fit:contain}
+@media(max-width:650px){.footer-cofunded{width:145px;margin-top:7px}}
